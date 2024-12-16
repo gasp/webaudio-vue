@@ -27,6 +27,9 @@ import { RouterLink } from 'vue-router'
       <li>
         <RouterLink to="/lfo">Low Frequency Oscillator</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/sample-rate">Sample Rate</RouterLink>
+      </li>
     </ol>
 
   </nav>
