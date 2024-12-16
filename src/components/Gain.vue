@@ -31,7 +31,12 @@ watch(gain, (newGain) => {
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
+button {
+  display: block;
+  margin: 1rem 0;
+}
+
+input {
+  display: block
 }
 </style>

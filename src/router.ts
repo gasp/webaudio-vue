@@ -8,6 +8,7 @@ import OscillatorStartTime from './components/OscillatorStartTime.vue'
 import Theremin from './components/Theremin.vue'
 import RandomSynth from './components/RandomSynth.vue'
 import Gain from './components/Gain.vue'
+import LowFrequencyOscillator from './components/LowFrequencyOscillator.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -18,6 +19,7 @@ const routes = [
   { path: '/theremin', component: Theremin },
   { path: '/random-synth', component: RandomSynth },
   { path: '/gain', component: Gain },
+  { path: '/lfo', component: LowFrequencyOscillator },
 ]
 
 const router = createRouter({

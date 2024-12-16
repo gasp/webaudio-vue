@@ -24,6 +24,9 @@ import { RouterLink } from 'vue-router'
       <li>
         <RouterLink to="/gain">Gain</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/lfo">Low Frequency Oscillator</RouterLink>
+      </li>
     </ol>
 
   </nav>
