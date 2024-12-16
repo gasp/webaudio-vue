@@ -39,6 +39,9 @@ import { RouterLink } from 'vue-router'
       <li>
         <RouterLink to="/microphone">Microphone</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/effects">Effects</RouterLink>
+      </li>
     </ol>
 
   </nav>

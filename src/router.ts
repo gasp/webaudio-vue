@@ -12,6 +12,7 @@ import LowFrequencyOscillator from './components/LowFrequencyOscillator.vue'
 import SampleRate from './components/SampleRate.vue'
 import Buffer from './components/Buffer.vue'
 import DecodeAudio from './components/DecodeAudio.vue'
+import Effects from './components/Effects.vue'
 import Microphone from './components/Microphone.vue'
 
 const routes = [
@@ -28,6 +29,7 @@ const routes = [
   { path: '/buffer', component: Buffer },
   { path: '/decode-audio', component: DecodeAudio },
   { path: '/microphone', component: Microphone },
+  { path: '/effects', component: Effects },
 ]
 
 const router = createRouter({
