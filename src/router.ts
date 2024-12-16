@@ -10,6 +10,7 @@ import RandomSynth from './components/RandomSynth.vue'
 import Gain from './components/Gain.vue'
 import LowFrequencyOscillator from './components/LowFrequencyOscillator.vue'
 import SampleRate from './components/SampleRate.vue'
+import Buffer from './components/Buffer.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -22,6 +23,7 @@ const routes = [
   { path: '/gain', component: Gain },
   { path: '/lfo', component: LowFrequencyOscillator },
   { path: '/sample-rate', component: SampleRate },
+  { path: '/buffer', component: Buffer },
 ]
 
 const router = createRouter({

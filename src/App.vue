@@ -30,6 +30,9 @@ import { RouterLink } from 'vue-router'
       <li>
         <RouterLink to="/sample-rate">Sample Rate</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/buffer">Buffer</RouterLink>
+      </li>
     </ol>
 
   </nav>
