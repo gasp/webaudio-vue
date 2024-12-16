@@ -3,7 +3,6 @@ import { ref } from 'vue';
 const bufferSizeDisplay = ref(0);
 let context: null | AudioContext = null
 function play() {
-
   context = new AudioContext()
   // 3 seconds of buffer
   const bufferSize = context.sampleRate * 3
@@ -27,11 +26,7 @@ function play() {
 
   noise.connect(context.destination)
   bufferSizeDisplay.value = buffer.length
-  context.resume().then(() => {
-    noise.start()
-    console.log('Playback resumed successfully')
-  })
-
+  noise.start()
 }
 </script>
 

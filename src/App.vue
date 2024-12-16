@@ -33,6 +33,9 @@ import { RouterLink } from 'vue-router'
       <li>
         <RouterLink to="/buffer">Buffer</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/decode-audio">Decode audio</RouterLink>
+      </li>
     </ol>
 
   </nav>

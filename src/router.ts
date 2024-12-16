@@ -11,6 +11,7 @@ import Gain from './components/Gain.vue'
 import LowFrequencyOscillator from './components/LowFrequencyOscillator.vue'
 import SampleRate from './components/SampleRate.vue'
 import Buffer from './components/Buffer.vue'
+import DecodeAudio from './components/DecodeAudio.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -24,6 +25,7 @@ const routes = [
   { path: '/lfo', component: LowFrequencyOscillator },
   { path: '/sample-rate', component: SampleRate },
   { path: '/buffer', component: Buffer },
+  { path: '/decode-audio', component: DecodeAudio },
 ]
 
 const router = createRouter({
