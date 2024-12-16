@@ -1,19 +1,27 @@
 <script setup lang="ts">
-function create() {
+import { ref, watch } from 'vue';
+const frequency = ref(100);
+
+let oscillator: OscillatorNode | null = null;
+function play() {
   const context = new AudioContext()
-  const oscillator = context.createOscillator()
+  oscillator = context.createOscillator()
   oscillator.frequency.value = 100
   oscillator.connect(context.destination)
   oscillator.start()
-
-  setInterval(() => {
-    oscillator.frequency.value = Math.floor(Math.random() * 1000)
-  }, 100)
 }
+
+// Watch for changes in frequency and update oscillator frequency
+watch(frequency, (newFrequency) => {
+  if (oscillator) {
+    oscillator.frequency.value = newFrequency
+  }
+})
 </script>
 
 <template>
-  <button @click="create">Play randomized theremin</button>
+  <button @click="play">Play the theremin</button>
+  <input type="range" min="20" max="2000" v-model="frequency" />
 </template>
 
 <style scoped></style>
