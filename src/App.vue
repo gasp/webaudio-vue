@@ -18,6 +18,12 @@ import { RouterLink } from 'vue-router'
       <li>
         <RouterLink to="/theremin">Theremin</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/random-synth">Random Synth</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/gain">Gain</RouterLink>
+      </li>
     </ol>
 
   </nav>

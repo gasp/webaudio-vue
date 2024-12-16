@@ -6,6 +6,8 @@ import AudioContext from './components/AudioContext.vue'
 import Oscillator from './components/Oscillator.vue'
 import OscillatorStartTime from './components/OscillatorStartTime.vue'
 import Theremin from './components/Theremin.vue'
+import RandomSynth from './components/RandomSynth.vue'
+import Gain from './components/Gain.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -14,6 +16,8 @@ const routes = [
   { path: '/oscillator', component: Oscillator },
   { path: '/oscillator-start-time', component: OscillatorStartTime },
   { path: '/theremin', component: Theremin },
+  { path: '/random-synth', component: RandomSynth },
+  { path: '/gain', component: Gain },
 ]
 
 const router = createRouter({
