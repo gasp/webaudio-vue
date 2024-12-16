@@ -4,9 +4,20 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <nav>
-
     <ol>
-      <RouterLink to="/media">Media event</RouterLink>
+      <li>
+        <RouterLink to="/media">Media event</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/audio-context">Audio context</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/oscillator">Oscillator</RouterLink>
+        <RouterLink to="/oscillator-start-time">Oscillator start time</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/theremin">Theremin</RouterLink>
+      </li>
     </ol>
 
   </nav>
@@ -14,18 +25,8 @@ import { RouterLink } from 'vue-router'
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+nav {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
 }
 </style>

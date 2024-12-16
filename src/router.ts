@@ -1,15 +1,23 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createWebHistory, createRouter } from 'vue-router'
 
 import Home from './components/Home.vue'
 import MediaEents from './components/MediaEvents.vue'
+import AudioContext from './components/AudioContext.vue'
+import Oscillator from './components/Oscillator.vue'
+import OscillatorStartTime from './components/OscillatorStartTime.vue'
+import Theremin from './components/Theremin.vue'
 
 const routes = [
   { path: '/', component: Home },
   { path: '/media', component: MediaEents },
+  { path: '/audio-context', component: AudioContext },
+  { path: '/oscillator', component: Oscillator },
+  { path: '/oscillator-start-time', component: OscillatorStartTime },
+  { path: '/theremin', component: Theremin },
 ]
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 })
 
