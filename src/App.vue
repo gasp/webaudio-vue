@@ -12,7 +12,7 @@ import { RouterLink } from 'vue-router'
         <RouterLink to="/audio-context">Audio context</RouterLink>
       </li>
       <li>
-        <RouterLink to="/oscillator">Oscillator</RouterLink>
+        <RouterLink to="/oscillator">Oscillator</RouterLink> and
         <RouterLink to="/oscillator-start-time">Oscillator start time</RouterLink>
       </li>
       <li>
